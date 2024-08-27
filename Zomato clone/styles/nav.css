@@ -1,0 +1,54 @@
+header{
+  
+    width:100%;
+   
+    position: absolute;
+}
+nav{
+    width: 80%;
+    display: flex;
+    font-weight: 200;
+    background: transparent;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    user-select: none;
+    padding: 1.7rem 0px;
+    color: #fff;
+    
+    
+}
+nav .nav-element{
+    color: #fff;
+    padding-bottom: 1rem;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0px 0px 0.2rem;
+    display: flex;
+    text-align: center;
+    gap: 5px;
+  
+
+}
+.nav-left{
+    margin-left: 180px;
+}
+.nav-element a{
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    
+}
+.nav-right{
+    display: flex;
+    margin-right: 110px;
+    
+}
+.nav-right .nav-element a{
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    font-weight: 100;
+    padding: 0.8rem;
+
+}
+/* header endsss */

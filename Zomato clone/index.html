@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css">
+    <link rel="stylesheet" href="/styles/top.css" type="text/css">
+    <link rel="stylesheet" href="/styles/top.css" type="text/css">
+    <link rel="stylesheet" href="/styles/main.css" type="text/css">
+    <link rel="stylesheet" href="/styles/options.css" type="text/css">
+    <link rel="stylesheet" href="/styles/collections.css" type="text/css">
+    <link rel="stylesheet" href="/styles/localities.css" type="text/css">
+    <link rel="stylesheet" href="/styles/app-section.css" type="text/css">
+    <link rel="stylesheet" href="/styles/explore.css" type="text/css">
+    <link rel="stylesheet" href="/styles/footer.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header start -->
+  <header>
+    <nav>
+        <div class="nav-left">
+            <div class="nav-element">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" width="10" height="10" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 gvsUip"><title>download-app</title><path d="M18.5793 9.18939H16.5865H16.3199C15.7307 9.18939 15.2529 9.6672 15.2529 10.2583V10.3742C15.2529 10.9659 15.7307 11.444 16.3207 11.444H18.3156H18.5793C19.1696 11.444 19.6488 10.9639 19.6488 10.3742L19.6477 10.2569C19.6488 9.6672 19.1696 9.18939 18.5793 9.18939Z"></path><path d="M18.5804 6.52262H18.1097V1.35122C18.1097 0.607964 17.5017 0 16.7582 0H7.84167C7.09841 0 6.49045 0.608249 6.49045 1.35122V5.06151C4.69196 6.07821 2.83696 7.14029 2.83296 7.14286C1.82597 7.5573 0.350586 8.89453 0.350586 12.0522C0.350586 12.3342 0.369139 12.5945 0.395113 12.846C0.40339 12.9197 0.412524 12.9904 0.422514 13.0615C0.448488 13.2462 0.481027 13.4229 0.519845 13.5907C0.533831 13.6506 0.544678 13.7131 0.559805 13.7705C0.612039 13.9646 0.67255 14.1467 0.740482 14.32C0.774733 14.4059 0.811839 14.4841 0.84923 14.5646C0.88919 14.6494 0.929436 14.7327 0.972535 14.8106C1.02249 14.9045 1.07244 14.995 1.12724 15.0809C1.14037 15.1009 1.15464 15.1192 1.16805 15.1394C2.46847 17.1052 4.8675 17.114 4.8675 17.114H6.49045V18.6494C6.49045 19.3918 7.09841 19.9997 7.84167 19.9997H16.7579C17.5014 19.9997 18.1094 19.3915 18.1094 18.6494V16.7767H18.3155V16.7755H18.5784C19.1695 16.7755 19.6487 16.2974 19.6476 15.7063L19.6487 15.5898C19.6476 14.9996 19.1695 14.5229 18.5792 14.5229H18.3155H16.5861H16.3195C15.7292 14.5229 15.2525 15.0007 15.2525 15.5907V15.7091C15.2525 16.2977 15.7304 16.7775 16.3203 16.7775H17.1692V17.5008H7.43036V7.79877C7.91959 7.48851 8.37256 7.18995 8.63088 6.98987C9.93957 5.97774 11.1818 5.17169 11.3499 4.4407C11.5688 3.49222 10.8407 2.69302 9.57765 3.34922C9.17976 3.55587 8.36315 4.00885 7.43036 4.53261V2.14129L17.1692 2.14271V6.52205H16.5861V6.52319H16.3209C15.7304 6.52319 15.2511 7.001 15.2511 7.59269V7.70858C15.2511 8.29999 15.7303 8.77665 16.3195 8.77665H16.5846H18.3141H18.5798C19.1695 8.77665 19.6476 8.29884 19.6476 7.70858V7.58955C19.6487 7.00186 19.1709 6.52262 18.5804 6.52262ZM12.2986 17.9752C12.6731 17.9752 12.9751 18.2774 12.9751 18.6511C12.9751 19.0255 12.6728 19.3267 12.2986 19.3267C11.9256 19.3267 11.6242 19.0247 11.6242 18.6511C11.6247 18.2786 11.927 17.9752 12.2986 17.9752ZM13.7266 1.30098H10.8735C10.7839 1.30098 10.7097 1.2282 10.7097 1.13829C10.7097 1.04695 10.7839 0.974169 10.8735 0.974169H13.7266C13.8163 0.974169 13.8893 1.04667 13.8893 1.13829C13.8893 1.22792 13.8163 1.30098 13.7266 1.30098Z"></path><path d="M18.5788 11.8561H18.3151H16.3193C15.7302 11.8561 15.251 12.3353 15.251 12.9253V13.0423C15.251 13.6329 15.7291 14.1107 16.3193 14.1107H16.5845H18.3139H18.5782C19.1693 14.1107 19.646 13.6329 19.6474 13.0423V12.9253C19.6472 12.3353 19.1705 11.8561 18.5788 11.8561Z"></path></svg>
+                <a href="#">Get the App</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-element"><a href="#">Investor Relations</a></div>
+            <div class="nav-element"><a href="#">Add Restaurant</a></div>
+            <div class="nav-element"><a href="#">Login</a></div>
+            <div class="nav-element"><a href="#">Signup</a></div>
+        </div>
+    </nav>
+  </header>
+  <!-- header endss -->
+
+  <!-- body starts -->
+
+  <main>
+    <section class="top">
+        <img src="/images/topimg.avif" alt="topimg" class="bg-image">
+        <div class="center-content">
+        <img src="/images/zlogo.avif" alt="log-img" class="log-img">
+        <h1>Discover the best food & drinks in <span class="city"> Delhi NCR</span></h1>
+        <div class="search-container">
+          <div class="location">
+            <i class="sc-rbbb40-1 iFnyeo" color="#FF7E8B" size="20"><svg xmlns="http://www.w3.org/2000/svg" fill="#FF7E8B" width="20" height="20" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 iRDDBk"><title>location-fill</title><path d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"></path></svg></i>
+            <input placeholder="Ywca, 1, Ashoka Rd, Hanuman Road Area, Connaught Place, New Delhi, Delhi" class="location-input" value="">
+            <i class="sc-rbbb40-1 iFnyeo sc-hQfrgq eNzNNF" color="#4F4F4F" size="12"><svg xmlns="http://www.w3.org/2000/svg" fill="#4F4F4F" width="12" height="12" viewBox="0 0 20 20" aria-labelledby="icon-svg-title- icon-svg-desc-" role="img" class="sc-rbbb40-0 ezrcri"><title>down-triangle</title><path d="M20 5.42l-10 10-10-10h20z"></path></svg></i> 
+          </div>
+          <div class="line"></div>
+          <div class="search">
+            <div class="search-icon">
+              <i data-feather="search"></i> 
+            </div>
+          <input placeholder="Search for restaurant, cuisine or a dish" class="search-box" value="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-body">
+      <div class="options">
+        <div class="option">
+          <div class="image">
+            <img src="./images/img1.avif" alt="image-one">
+          </div>
+          <div class="info">
+            <div class="info-title">Order Online</div>
+            <div class="info-discription">Stay  home and order on your doorstep</div>
+          </div>
+        </div>
+        <div class="option">
+          <div class="image">
+            <img src="./images/img2.avif" alt="image-one">
+          </div>
+          <div class="info">
+            <div class="info-title">Dining</div>
+            <div class="info-discription">View the city's favourite dining venues</div>
+          </div>
+        </div>
+        <div class="option">
+          <div class="image">
+            <img src="./images/img3.jpeg" alt="image-one">
+          </div>
+          <div class="info">
+            <div class="info-title">Live Events</div>
+            <div class="info-discription">Discover India’s best events & concerts</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="collections">
+        <h1 class="heading-2">Collections</h1>
+          <div class="collection-desc">
+            <h6 class="heading-6">Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</h6>
+            <a class="see-more" href="/">All collections in Delhi NCR
+              <i data-feather="chevron-right"></i> 
+            </a>
+          </div>
+          <div class="collections-list">
+            <div class="collection">
+              <div class="image"><img alt="Top Trending Spots" src="https://b.zmtcdn.com/data/collections/684397cd092de6a98862220e8cc40aca_1709810183.png?output-format=webp" loading="lazy"></div>
+              <div class="overlay">
+                <div class="overlay-info">
+                  Top Trending Spots
+                  <div class="places">
+                    37 Places
+                    <i data-feather="chevron-right"></i> 
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="collection">
+              <div class="image"><img alt="Best Insta-worthy Places" src="https://b.zmtcdn.com/data/collections/fbd237478a5d3b6ea08de83c30230cdd_1705558245.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD"></div>
+              <div class="overlay">
+                <div class="overlay-info">
+                  Best Insta-worthy Places
+                  <div class="places">
+                    38 Places
+                    <i data-feather="chevron-right"></i> 
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="collection">
+              <div class="image"><img alt="Newly Opened Places" src="https://b.zmtcdn.com/data/collections/7771cf3a18e1da2916794d3998260c69_1705557723.png?output-format=webp" loading="lazy" class="sc-s1isp7-5 fyZwWD"></div>
+              <div class="overlay">
+                <div class="overlay-info">
+                  Newly Opened Places
+                  <div class="places">
+                    17 Places
+                    <i data-feather="chevron-right"></i> 
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+         </div>
+         <div class="localities">
+          <div class="title">
+            Popular localities in and around <span class="city"> Delhi NCR</span>
+            </div>
+            <div class="localities-list">
+              <div class="locality row">
+               <div class="left">
+                <div class="locality-title">Connaught Place</div>
+                <div class="places">287 places</div>
+               </div>
+               <div class="right">
+                <i data-feather="chevron-right"></i> 
+               </div>
+              </div>
+              <div class="locality row">
+                <div class="left">
+                 <div class="locality-title">Sector 29</div>
+                 <div class="places">148 places</div>
+                </div>
+                <div class="right">
+                 <i data-feather="chevron-right"></i> 
+                </div>
+               </div>
+               <div class="locality row">
+                <div class="left">
+                 <div class="locality-title">Sector 18, Noida</div>
+                 <div class="places">235 places</div>
+                </div>
+                <div class="right">
+                 <i data-feather="chevron-right"></i> 
+                </div>
+               </div>
+               <div class="locality row">
+                <div class="left">
+                 <div class="locality-title">Rajouri Garden</div>
+                 <div class="places">397 places</div>
+                </div>
+                <div class="right">
+                 <i data-feather="chevron-right"></i> 
+                </div>
+               </div>
+               <div class="locality row">
+                <div class="left">
+                 <div class="locality-title">Saket</div>
+                 <div class="places">356 places</div>
+                </div>
+                <div class="right">
+                 <i data-feather="chevron-right"></i> 
+                </div>
+               </div>
+               <div class="locality row">
+                <div class="left">
+                 <div class="locality-title">DLF Cyber City</div>
+                 <div class="places">185 places</div>
+                </div>
+                <div class="right">
+                 <i data-feather="chevron-right"></i> 
+                </div>
+               </div>
+               <div class="locality row">
+                <div class="left">
+                 <div class="locality-title">Golf Course Road</div>
+                 <div class="places">164 places</div>
+                </div>
+                <div class="right">
+                 <i data-feather="chevron-right"></i> 
+                </div>
+               </div>
+               <div class="locality row">
+                <div class="left">
+                 <div class="locality-title">DLF Phase 4</div>
+                 <div class="places">240 places</div>
+                </div>
+                <div class="right">
+                 <i data-feather="chevron-right"></i> 
+                </div>
+               </div>
+               <div class="locality">
+                <div class="center">
+                see more
+                <i data-feather="chevron-down"></i> 
+                </div>
+               </div>
+           </div>
+         </div>
+    </section>
+    <section class="app-section">
+      <div class="app-content">
+        <div class="phone-image">
+          <img src="/images/phone.avif" alt="">
+        </div>
+        <div class="app-info">
+          <div class="app-heading">Get the Zomato app</div>
+          <div class="app-description">We will send you a link, open it on your phone to download the app</div>
+          <div class="app-options row">
+            <div class="app-option">
+              <input type="radio" id="email" name="options" checked>
+              <label for="email">Email</label>
+            </div>
+            <div class="app-option">
+              <input type="radio" id="phone" name="options">
+              <label for="phone">Phone</label>
+            </div>
+          </div>
+<div class="email-input row">
+  <input type="email" placeholder="Email" id="email-input">
+  <button>Share App Link</button>
+</div>
+<div class="downld">
+  <div class="downld-desc">
+    Download app from
+  </div>
+  <div class="downld-btns row">
+    <img src="/images/playstore.webp" alt="googleplay-img">
+    <img src="/images/applestore.webp" alt="apple-img">
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="explore-opt">
+      <div class="explore-heading">
+        Explore options near me
+      </div>
+      <div class="box-lists">
+        <div class="box">
+          <div class="box-container">
+          <div class="box-title">Popular cuisines near me</div>
+          <i data-feather="chevron-down"></i> 
+        </div>
+          <div class="box-data">
+           <ul>
+            <li>Bakery food near me </li>
+            <span class="small-circle"></span>
+            <li>Beverages food near me </li>
+            <span class="small-circle"></span>
+            <li>Biriyani food near me </li>
+            <span class="small-circle"></span>
+            <li>Burger food near me</li>
+            <span class="small-circle"></span>
+            <li>Chineese food near me</li>
+            <span class="small-circle"></span>
+            <li>Coffee food near me</li>
+            <span class="small-circle"></span>
+            <li>Contintal food near me</li>
+            <span class="small-circle"></span>
+            <li>Pizza food near me</li>
+            <span class="small-circle"></span>
+            <li>Italian food near me</li>
+            <span class="small-circle"></span>
+            <li>Kabaab food near me</li>
+            <span class="small-circle"></span>
+            <li>Paris item food near me</li>
+            <span class="small-circle"></span>
+            <li>Pathiri food near me</li>
+            <span class="small-circle"></span>
+            <li>Fish food near me</li>
+            <span class="small-circle"></span>
+            <li>Street food near me</li>
+            <span class="small-circle"></span>
+            <li>South indian food near me</li>
+            <span class="small-circle"></span>
+            <li>North indian food near me</li>
+            <span class="small-circle"></span>
+            <li>Pasta food near me</li>
+            <span class="small-circle"></span>
+            <li>Momos food near me</li>
+            <span class="small-circle"></span>
+           </ul>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-container">
+          <div class="box-title">Popular restaurant types near me</div>
+          <i data-feather="chevron-down"></i> 
+        </div>
+          <div class="box-data">
+           <ul>
+            <li>Bakery food near me </li>
+            <span class="small-circle"></span>
+            <li>Beverages food near me </li>
+            <span class="small-circle"></span>
+            <li>Biriyani food near me </li>
+            <span class="small-circle"></span>
+            <li>Burger food near me</li>
+            <span class="small-circle"></span>
+            <li>Chineese food near me</li>
+            <span class="small-circle"></span>
+            <li>Coffee food near me</li>
+            <span class="small-circle"></span>
+            <li>Contintal food near me</li>
+            <span class="small-circle"></span>
+            <li>Pizza food near me</li>
+            <span class="small-circle"></span>
+            <li>Italian food near me</li>
+            <span class="small-circle"></span>
+            <li>Kabaab food near me</li>
+            <span class="small-circle"></span>
+            <li>Paris item food near me</li>
+            <span class="small-circle"></span>
+            <li>Pathiri food near me</li>
+            <span class="small-circle"></span>
+            <li>Fish food near me</li>
+            <span class="small-circle"></span>
+            <li>Street food near me</li>
+            <span class="small-circle"></span>
+            <li>South indian food near me</li>
+            <span class="small-circle"></span>
+            <li>North indian food near me</li>
+            <span class="small-circle"></span>
+            <li>Pasta food near me</li>
+            <span class="small-circle"></span>
+            <li>Momos food near me</li>
+            <span class="small-circle"></span>
+           </ul>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-container">
+          <div class="box-title">Top Restaurant Chains</div>
+          <i data-feather="chevron-down"></i> 
+        </div>
+          <div class="box-data">
+           <ul>
+            <li>Bakery food near me </li>
+            <span class="small-circle"></span>
+            <li>Beverages food near me </li>
+            <span class="small-circle"></span>
+            <li>Biriyani food near me </li>
+            <span class="small-circle"></span>
+            <li>Burger food near me</li>
+            <span class="small-circle"></span>
+            <li>Chineese food near me</li>
+            <span class="small-circle"></span>
+            <li>Coffee food near me</li>
+            <span class="small-circle"></span>
+            <li>Contintal food near me</li>
+            <span class="small-circle"></span>
+            <li>Pizza food near me</li>
+            <span class="small-circle"></span>
+            <li>Italian food near me</li>
+            <span class="small-circle"></span>
+            <li>Kabaab food near me</li>
+            <span class="small-circle"></span>
+            <li>Paris item food near me</li>
+            <span class="small-circle"></span>
+            <li>Pathiri food near me</li>
+            <span class="small-circle"></span>
+            <li>Fish food near me</li>
+            <span class="small-circle"></span>
+            <li>Street food near me</li>
+            <span class="small-circle"></span>
+            <li>South indian food near me</li>
+            <span class="small-circle"></span>
+            <li>North indian food near me</li>
+            <span class="small-circle"></span>
+            <li>Pasta food near me</li>
+            <span class="small-circle"></span>
+            <li>Momos food near me</li>
+            <span class="small-circle"></span>
+           </ul>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-container">
+          <div class="box-title">Cities We Deliver To</div>
+          <i data-feather="chevron-down"></i> 
+        </div>
+          <div class="box-data">
+           <ul>
+            <li>Bakery food near me </li>
+            <span class="small-circle"></span>
+            <li>Beverages food near me </li>
+            <span class="small-circle"></span>
+            <li>Biriyani food near me </li>
+            <span class="small-circle"></span>
+            <li>Burger food near me</li>
+            <span class="small-circle"></span>
+            <li>Chineese food near me</li>
+            <span class="small-circle"></span>
+            <li>Coffee food near me</li>
+            <span class="small-circle"></span>
+            <li>Contintal food near me</li>
+            <span class="small-circle"></span>
+            <li>Pizza food near me</li>
+            <span class="small-circle"></span>
+            <li>Italian food near me</li>
+            <span class="small-circle"></span>
+            <li>Kabaab food near me</li>
+            <span class="small-circle"></span>
+            <li>Paris item food near me</li>
+            <span class="small-circle"></span>
+            <li>Pathiri food near me</li>
+            <span class="small-circle"></span>
+            <li>Fish food near me</li>
+            <span class="small-circle"></span>
+            <li>Street food near me</li>
+            <span class="small-circle"></span>
+            <li>South indian food near me</li>
+            <span class="small-circle"></span>
+            <li>North indian food near me</li>
+            <span class="small-circle"></span>
+            <li>Pasta food near me</li>
+            <span class="small-circle"></span>
+            <li>Momos food near me</li>
+            <span class="small-circle"></span>
+           </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <footer>
+      <div class="footer-data">
+      <div class="top-footer row">
+        <img src="/images/zomendlogo.avif" alt="zomato logo">
+        <div class="dropdowns row">
+          <div class="dropdown row">
+            <img src="images/india.png" alt="india logo">
+            <div class="dropdown-text">India</div>
+            <i data-feather="chevron-down"></i> 
+          </div>
+          <div class="dropdown row">
+            <i data-feather="globe"></i>
+            <div class="dropdown-text">English</div>
+            <i data-feather="chevron-down"></i> 
+          </div>
+        </div>
+      </div>
+      <div class="middle-footer row">
+        <div class="footer-links">
+          <h6 class="footer-title">About Zomato</h6>
+          <ul>
+            <li>Who We Are</li>
+            <li>Blog</li>
+            <li>Work With Us</li>
+            <li>Investor Relations</li>
+            <li>Report Fraud</li>
+            <li>Press Kit</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h6 class="footer-title">Zomaverse</h6>
+          <ul>
+            <li>Zomato</li>  
+            <li>Blinkit</li>
+            <li> Feeding India</li>
+            <li>Hyperpure</li>
+            <li>Zomato Live</li>
+            <li>Zomaland</li>
+            <li> Weather Union</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h6 class="footer-title">or Restaurants</h6>
+          <ul>
+         <li>Partner With Us</li>
+            <li>Apps For You</li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h6 class="footer-title">Learn More</h6>
+          <ul>
+            <li> Privacy</li>
+            <li>Security</li>
+            <li>Terms</li>
+            <li>Sitemap</li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h6 class="footer-title">Social links</h6>
+          <div class="socials">
+          <ul class="row">
+            <li><i class="fab fa-linkedin"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
+            <li><i class="fab fa-facebook"></i> </li>
+            
+          </ul>
+        </div>
+        <div class="button column">
+          <img src="images/applestore.webp" alt="applestore">
+          <img src="images/playstore.webp" alt="playstore">
+        </div>
+      </div>
+      </div>
+      <hr>
+      <div class="end-footer">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</div>
+    </div>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
